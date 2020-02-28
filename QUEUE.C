@@ -67,16 +67,14 @@ int del()
 	}
 	else
 	{
+		x=q[front];
+		front++;
 		if(front>rear)
 		{
 			front=-1;
 			rear=-1;
 		}
-		else
-		{
-			x=q[front];
-			front++;
-		}
+		
 	}
 	return x;
 }
